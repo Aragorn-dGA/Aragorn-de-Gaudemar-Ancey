@@ -22,31 +22,6 @@
   <hr />
   <br/>
 
-  <h2>Mes projets</h2><br>
-  <table style="width:100%">
-    <tr style="background-color: #11F;">
-      <th>Titre du projet</th>
-      <th>Date début du projet</th>
-      <th>Compétences</th>
-    </tr>
-
-    <!--Création de ligne de table pour chaque champ du BDD-->
-    <?php
-    $projets = getProjets();
-
-    if ($projets ==! null) {
-      // Créer un rang pour chaque entré
-      foreach ($projets as $row) :?>
-        <tr href="">
-          <th> <?= $row["titre"] ?> </th>
-          <th> <?= $row["date"] ?> </th>
-          <th> <!-- <?= $row["competences"] ?> --> </th>
-        </tr>
-      <?php endforeach; 
-    }
-    ?>
-  </table>
-
   <h2>Mon CV</h2><br>
   <a href="Extras/20250923_CV_Aragorn.pdf" id="CV_Link">Lien vers le CV téléchargeable</a>
 
