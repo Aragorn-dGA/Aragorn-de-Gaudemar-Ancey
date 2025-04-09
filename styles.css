@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#about-me, #stages, #mes-projets {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-left, .skills-right {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-left li, .skills-right li {
+    margin: 5px 0;
+}
+
+.skills-right {
+    margin-left: 50%;
+}
+
+.skills div {
+    width: 30%;
+}
+
+.button-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.projet-box, .stages-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button.interesting {
+    background: #28A745;
+}
+
+hr {
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    height: 1px;
+    background-color: #ccc;
+}
+
+#Veille {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+span
+{
+    text-align: center;
+    width: 30%;
+}
