@@ -1,41 +1,136 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="Style/Bootstrap.css" />
-    <title>Portfolio - Aragorn de Gaudemar-Ancey</title>   <!-- Élément spécifique -->
-  </head>
-  <body>
-    <div id="global">
-      <header>
-        <a href="index.php"><h1 id="titreBlog">Aragorn de Gaudemar-Ancey</h1></a>
-      </header>
-      <div id="contenu">
-        <h2>Introduction</h2>
-        <h4>
-          <p>Prénom : Aragorn</p>
-          <p>Nom : de Gaudemar-Ancey</p>
-          <p>Age : 21 ans</p>
-          <p>Formation : BTS SIO - SLAM</p>
-          <p></p>
-        </h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aragorn de Gaudemar-Ancey - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aragorn de Gaudemar-Ancey</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#mes-projets">Mes Projets</a></li>
+            <li><a href="#stages">Stages</a></li>
+            <li><a href="#veille">Ma veille</a></li>
+        </ul>
+    </nav>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <ul>
+            <li>21 ans</li>
+            <li>Étudiant BTS SIO</li>
+            <li>Charcutier</li>
+            <li>Technicien Informatique</li>
+        </ul>
+
+        <br />
+
+        <h3>Compétences</h3>
+        <div class="skills">
+            <div>
+                <h4>Compétences Informatique</h4>
+                <div class="skills-container">
+                    <ul class="skills-left">
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        <li>Mariadb</li>
+                        <li>PostgreSQL</li>
+                        <li>CMS (WordPress)</li>
+                        <li>Git</li>
+                    </ul>
+                    <ul class="skills-right">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>AJAX</li>
+                        <li>jQuery</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>Langues</h4>
+                <ul>
+                    <li>Anglais (langue maternelle)</li>
+                    <li>Français (bilingue)</li>
+                    <li>Allemand (notions)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="Extras/20250923_CV_Aragorn.pdf" class="button" download>Retrouver mon CV</a>
+            <span>        </span>
+            <a href="Extras/6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2022.xlsx" class="button interesting" download>Ouvrir Synthesis</a>
+        </div>
+    </section>
     
-        <br/>
-        <hr />
-        <br/>
+    <br />
+    <hr>
+    <br />
 
-        <h2>Mon CV</h2><br>
-        <a href="Extras/20250923_CV_Aragorn.pdf" id="CV_Link">Lien vers le CV téléchargeable</a>
+    <section id="mes-projets">
+        <h2>Mes Projets</h2>
+        <!-- Project Box Start -->
+        <div class="projet-box">
+            <h3>InfoDev</h3>
+            <p>Description of the project goes here.</p>
+            <p>Compétences aquises : Déploiement de serveur Web, Active Directory, FTP, SSH, HTML, PHP, SQL</p>
+            <a href="Extras/Ap - Aragorn _ Ralph.pdf" class="button interesting" download>Ouvrir Synthesis</a>
+        </div>
+        <!-- Project Box End -->
 
-        <br/>
-        <hr />
-        <br/>
-      </div>
-      <footer id="piedBlog">
-        <p>Adresse : 1 bis chemin du Devais</p><!-- adresses -->
-        <p>Numéro tel :</p><!-- numéro tel -->
-        <p>adresse mail : degaudemarara@gmail.com</p><!-- adresse mail -->
-      </footer>
-    </div> <!-- #global -->
-  </body>
+        <div class="projet-box">
+            <h3>InfoDev</h3>
+            <p>Description of the project goes here.</p>
+            <p>Compétences aquises : Déploiement de serveur Web, Active Directory, FTP, SSH, HTML, PHP, SQL</p>
+        </div>
+    </section>
+    
+    <br />
+    <hr>
+    <br />
+
+    <section id="stages">
+        <h2>Stages</h2>
+        <!-- Internship Box Start -->
+        <div class="stages-box">
+            <h3>Stage de 1ème Année BTS SIO</h3>
+            <p>Stage chez BriMetal</p>
+            <p>J'ai contribué à la mise en ligne d’un site web actif pour une entreprise, en les accompagnant dans le choix d’un hébergeur adapté. J’ai principalement travaillé sur un CMS (XMS).</p>
+            <p>CMS, Git</p>
+            <p>https://www.brimet.fr/</p>
+        </div>
+        <!-- Internship Box End -->
+
+        <div class="stages-box">
+            <h3>Stage de 2ème Année BTS SIO</h3>
+            <p>Stage de 7 Semaines chez Odigo</p>
+            <p>Pendant mon stage, j’ai acquis des compétences en développement web avec PHP, Java, Javascript, AJAX et jQuery, ainsi qu’en gestion de versions avec Git et en conteneurisation avec Docker. J’ai développé des applications web manipulant des tokens, configuré un environnement de développement sous Linux, et optimisé la communication entre une base de données PostgreSQL et des applications en JavaScript.</p>
+            <p>PostgreSQL, Git, PHP, Java, Javascript, AJAX, JQuery, Docker</p>
+        </div>
+    </section>
+
+    <br />
+    <hr>
+    <br />
+
+    <section id="Veille">
+        <h2>Ma Veille</h2>
+        <p class="content-veille">Dans le cadre de ma veille technologique, je me suis intéressé aux nouvelles vulnérabilités ainsi qu’aux solutions de protection émergentes dans le domaine des objets connectés (IoT).</p>
+        <a href="/Extras/IoT_Sécurité.pptx" class="button" download>Vous interesseur dans la Veille</a>
+    </section>
+
+    <footer>
+        <h2>Information de contact : </h2>
+        <p>Mail : degaudemarara@gmail.com | | Numéro de téléphone : 07 67 72 95 41</p>
+    </footer>
+</body>
 </html>
